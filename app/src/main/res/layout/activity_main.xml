@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#9A000000">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/back_space2"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/sifrelenecekMetin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/back_space"
+                        android:hint="Şifrelenecek Metni Giriniz"
+                        android:textColor="@color/white"
+                        android:textColorHint="#BEFFFFFF"
+                        android:padding="15dp"
+                        android:textAlignment="center" />
+
+                    <Button
+                        android:id="@+id/buttonSifrele"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_margin="15dp"
+                        android:backgroundTint="#094d79"
+                        android:text="Encrypt (Şifrele)" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp"
+                    android:background="@drawable/back_space2"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/cozulecekMetin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/back_space"
+                        android:hint="Şifreli Metni Giriniz"
+                        android:textColor="@color/white"
+                        android:textColorHint="#BEFFFFFF"
+                        android:padding="15dp"
+                        android:textAlignment="center" />
+
+                    <Button
+                        android:id="@+id/buttonCozme"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_margin="15dp"
+                        android:backgroundTint="#094d79"
+                        android:text="Decrypt (Şifreyi Çöz)" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+</layout>
